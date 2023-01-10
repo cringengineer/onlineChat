@@ -6,7 +6,7 @@ import emoji from './../../img/lol.png';
 import EmojiPicker from "emoji-picker-react";
 import Messages from "../Messages/Messages";
 
-const socket = io.connect('http://localhost:5000');
+const socket = io.connect('https://socket-service-tpop.onrender.com');
 
 
 const Wrapper = styled.div`
