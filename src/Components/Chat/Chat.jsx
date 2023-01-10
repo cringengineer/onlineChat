@@ -6,7 +6,7 @@ import emoji from './../../img/lol.png';
 import EmojiPicker from "emoji-picker-react";
 import Messages from "../Messages/Messages";
 
-const socket = io.connect('https://online-chat-service.onrender.com');
+const socket = io.connect('http://localhost:5000');
 
 
 const Wrapper = styled.div`
@@ -145,7 +145,7 @@ const Chat = () => {
     }, []);
 
     useEffect(() => {
-        socket.on('joinedRoom', ({data: {users}}) => {
+        socket.on('room', ({data: {users}}) => {
             setUsersCount(users.length);
         })
     }, []);
