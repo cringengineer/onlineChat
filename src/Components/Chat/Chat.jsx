@@ -17,6 +17,9 @@ const Wrapper = styled.div`
   width: 100%;
   background-image: linear-gradient(to right, #0f0c29, #221e46, #24243e);
   align-items: center;
+  @media (max-width: 768px) {
+    min-height: 100vh;
+  }
 `;
 const Title = styled.h2`
   font-size: 2em;
@@ -32,7 +35,7 @@ const Header = styled.div`
   justify-content: space-between;
   background-color: #34394d;
   margin-top: 20px;
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 15px 15px 0 0;
   height: 50px;
   @media (max-width: 768px) {
     width: 100vw;
@@ -58,11 +61,10 @@ const StyledForm = styled.form`
   display: flex;
   background-color: #34394d;
   width: 60vw;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   height: 40px;
-  border-radius: 0px 0px 15px 15px;
+  border-radius: 0 0 15px 15px;
   @media (max-width: 768px) {
     width: 100vw;
     border-radius: 0;
