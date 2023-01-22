@@ -55,11 +55,11 @@ const Main = () => {
     return (
         <Wrapper>
             <Form>
-                <Input placeholder=' Your name' name='username' type='text' value={data.name}
+                <Input placeholder='Your name' name='username' type='text' value={data.name} minLength={3}
                        onChange={(e) => onNameChange(e.currentTarget.value)} autoComplete="off"/>
-                <Input placeholder=' Room name' name='room' type='text' value={data.room}
+                <Input placeholder='Room name' name='room' type='text' value={data.room} minlength='3'
                        onChange={(e) => onRoomChange(e.currentTarget.value)} autoComplete="off"/>
-                <NavLink to={`/Chat?name=${data.name}&room=${data.room}`}>
+                <NavLink to={data.name.length > 1 && data.room.length > 1 ? `/Chat?name=${data.name}&room=${data.room}` :  '/'}>
                     <Btn>Join</Btn>
                 </NavLink>
             </Form>
