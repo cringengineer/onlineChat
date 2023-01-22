@@ -63,7 +63,7 @@ const StyledForm = styled.form`
   width: 60vw;
   align-items: center;
   justify-content: space-between;
-  height: 40px;
+  height: 60px;
   border-radius: 0 0 15px 15px;
   @media (max-width: 768px) {
     width: 100vw;
