@@ -11,7 +11,7 @@ const MessagesWrapper = styled.div`
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-
+  
   &::-webkit-scrollbar {
     background: rgba(21, 21, 38, 0.8);
     width: 5px;

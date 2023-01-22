@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   background-image: linear-gradient(to right, #0f0c29, #221e46, #24243e);
   align-items: center;
   @media (max-width: 768px) {
-    min-height: 100vh;
+    height: 100vh;
   }
 `;
 const Title = styled.h2`
@@ -84,8 +84,6 @@ const StyledInput = styled.input`
     border: none;
     outline: 0;
   }
-
-  
 `
 const StyledImg = styled.img`
   width: 30px;
@@ -187,7 +185,7 @@ const Chat = () => {
                     <StyledEmojiContainer>
                         <StyledImg alt='emoji' src={emoji} onClick={() => setOpen(!isOpen)}></StyledImg>
                         {isOpen ?
-                            <StyledEmojiPicker><EmojiPicker width="250px" height="350px" theme="auto" onEmojiClick={(emoji) => onEmojiClick(emoji)}/></StyledEmojiPicker> : null}
+                            <StyledEmojiPicker><EmojiPicker width="300px" height="350px" theme="auto" onEmojiClick={(emoji) => onEmojiClick(emoji)}/></StyledEmojiPicker> : null}
                     </StyledEmojiContainer>
                     <StyledSubmit value='Send' type="submit" onClick={(e) => sendMessage(e)}/>
                 </StyledContainer>
